@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convertisseur-unites"
+version = "0.1.0"
+description = "Conversion d'unités : longueur, poids, volume, température, vitesse"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mohamed Ali El Amri" }]
+keywords = ["unites", "conversion", "metrique"]
+
+[project.scripts]
+convertisseur-unites = "convertisseur_unites.__main__:main"
+
+[tool.setuptools]
+packages = ["convertisseur_unites"]
